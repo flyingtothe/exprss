@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="403">
+              <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -41,9 +41,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="772" />
-    <option name="y" value="16" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="798" />
+    <option name="y" value="7" />
     <option name="width" value="1151" />
     <option name="height" value="987" />
   </component>
@@ -150,15 +150,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="772" y="16" width="1151" height="987" extended-state="0" />
+    <frame x="798" y="7" width="1151" height="987" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22371967" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22371967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.30011722" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3985932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.34935522" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36811253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -178,10 +179,31 @@
     <option name="LAST_COMMIT_MESSAGE" value="19/4/22" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experss.py">
+    <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="810" selection-start-line="810" selection-end-line="810" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/603531505/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <caret line="3680" column="10" lean-forward="true" selection-start-line="3680" selection-start-column="10" selection-end-line="3680" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
         </state>
       </provider>
     </entry>
