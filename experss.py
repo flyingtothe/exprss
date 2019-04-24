@@ -22,8 +22,7 @@
 # 	else:
 # 		i += 1
 # 		a(i)
-# if __name__ == '__main__':
-# 	a(100)
+# a(100)
 
 
 # 2、企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高于10万元，低于20万元时，
@@ -50,11 +49,10 @@
 # 	else:
 # 		idx += 1
 # 		a(i, arr, rat, r, idx)
-# if __name__ == '__main__':
-# 	i = int(input('利润;'))
-# 	arr = [1000000, 600000, 400000, 200000, 100000, 0]
-# 	rat = [0.01, 0.015, 0.03, 0.05, 0.075, 0.1]
-# 	a(i, arr, rat, 0, 0)
+# i = int(input('利润;'))
+# arr = [1000000, 600000, 400000, 200000, 100000, 0]
+# rat = [0.01, 0.015, 0.03, 0.05, 0.075, 0.1]
+# a(i, arr, rat, 0, 0)
 
 # 暂未想到更好的解决办法
 # i = int(input('利润：'))
@@ -87,17 +85,16 @@
 # 	if 168 % i == 0:
 # 		j = 168 / i
 # 		if i > j and (i + j) % 2 == 0 and (i - j) % 2 == 0:
-# 			m = (i + j) / 2
+# 			# m = (i + j) / 2
 # 			n = (i - j) / 2
 # 			x = n * n - 100
 # 			print(x)
 # 	if i == 85:
-# 		print('结束')
+# 		return
 # 	else:
 # 		i += 1
 # 		a(i)
-# if __name__ == '__main__':
-# 	a(1)
+# a(1)
 
 
 # 4、输入某年某月某日，判断这一天是这一年的第几天？
@@ -144,11 +141,118 @@
 # 	x = int(input())
 # 	l.append(x)
 # 	if n == 2:
+# 		l.sort()
+# 		print(l)
 # 		return
 # 	n += 1
 # 	a(l, n)
-# if __name__ == '__main__':
-# 	l = []
-# 	a([], 0)
-# 	l.sort()
-# 	print(l)
+# a([], 0)
+
+
+
+# 6、斐波那契数列
+# arr = [1, 1]
+# for i in range(0, 100):
+# 	x = arr[i] + arr[i+1]
+# 	arr.append(x)
+# print(arr)
+
+# def a(arr, i):
+# 	x = arr[i] + arr[i+1]
+# 	arr.append(x)
+# 	if i == 7:
+# 		print(arr)
+# 		return
+# 	i += 1
+# 	a(arr, i)
+# a([1, 1], 0)
+
+# def fib(n):
+# 	a, b = 1, 1
+# 	for i in range(n-1):
+# 		a, b = b, a+b
+# 	return a
+# print(fib(10))
+
+# def fib(n):
+# 	if n == 1 or n == 2:
+# 		return 1
+# 	return fib(n-1)+fib(n-2)
+# print(fib(10))
+
+# 7、将一个列表的数据复制到另一个列表中
+# a = [1, 2, 3, 4]
+# b = a.copy()
+# print(b)
+
+# a = [1, 2, 3, 4]
+# b = a[:]
+# print(b)
+
+# 8、输出 9*9 乘法口诀表
+# for i in range(1,10):
+# 	for j in range(1, i+1):
+# 		print("%d*%d=%d" % (i, j, i*j), end=' ')
+# 	print()
+
+# def get_result(num):
+# 	if num == 1:
+# 		print('1 x 1 = 1')
+# 	else:
+# 		get_result(num-1)
+# 		for i in range(1, num+1):
+# 			print('%dx%d=%d' % (i, num, i*num), end=' ')
+# 		print()
+# get_result(9)
+
+
+# 9、暂停一秒输出
+# import time
+# d = {1: 'a', 2: 'b'}
+# for key, value in dict.items(d):
+# 	print(key, value)
+# 	time.sleep(1)
+
+
+# 10、暂停一秒输出，并格式化当前时间
+# import time
+# print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+# time.sleep(1)
+# print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+
+
+# 11、古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，
+# 假如兔子都不死，问每个月的兔子总数为多少？
+# f1 = 1
+# f2 = 1
+# for i in range(1, 22):
+#     print('%12ld %12ld' % (f1, f2))
+#     if (i % 3) == 0:
+#         print()
+#     f1 = f1 + f2
+#     f2 = f1 + f2
+
+# arr = [1, 1]
+# for i in range(0, 12):
+# 	x = arr[i] + arr[i+1]
+# 	arr.append(x)
+# 	print('%d月，共有%d对兔子' % (i+1, arr[i]))
+
+
+# 12、判断101-200之间有多少个素数，并输出所有素数
+# h = 0
+# leap = 1
+# from math import sqrt
+# for m in range(101, 201):
+#     k = int(sqrt(m + 1))
+#     for i in range(2, k + 1):
+#         if m % i == 0:
+#             leap = 0
+#             break
+#     if leap == 1:
+#         print('%-4d' % m)
+#         h += 1
+#         if h % 10 == 0:
+#             print()
+#     leap = 1
+# print('The total is %d' % h)
