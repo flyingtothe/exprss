@@ -240,6 +240,7 @@
 
 
 # 12、判断101-200之间有多少个素数，并输出所有素数
+# 用一个数分别去除2到sqrt(这个数)，如果能被整除，则表明此数不是素数，反之是素数
 # h = 0
 # leap = 1
 # from math import sqrt
@@ -256,3 +257,58 @@
 #             print()
 #     leap = 1
 # print('The total is %d' % h)
+
+
+# 13、打印出所有的"水仙花数"，所谓"水仙花数"是指一个三位数，其各位数字立方和等于该数本身。
+# for i in range(100, 1000):
+# 	s = str(i)
+# 	j = int(s[0]) ** 3
+# 	k = int(s[1]) ** 3
+# 	l = int(s[2]) ** 3
+# 	if i == j + k + l:
+# 		print(i)
+
+# for n in range(100, 1000):
+# 	i = int(n / 100)
+# 	j = int(n / 10 % 10)
+# 	k = int(n % 10)
+# 	if n == i ** 3 + j ** 3 + k ** 3:
+# 		print(n)
+
+
+# 14、将一个正整数分解质因数。例如：输入90,打印出90=2*3*3*5
+def reduceNum(n):
+	for i in range(2, n+1):
+		j = n / i
+		if n % i == 0:
+			print(i)
+			n = j
+reduceNum(130)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
