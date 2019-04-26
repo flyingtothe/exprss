@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
+            <state relative-caret-position="242">
+              <caret line="341" column="57" lean-forward="true" selection-start-line="341" selection-start-column="57" selection-end-line="341" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -42,8 +42,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="865" />
-    <option name="y" value="49" />
+    <option name="x" value="815" />
+    <option name="y" value="31" />
     <option name="width" value="1151" />
     <option name="height" value="987" />
   </component>
@@ -164,7 +164,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="865" y="49" width="1151" height="987" extended-state="0" />
+    <frame x="815" y="31" width="1151" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22371967" />
@@ -194,25 +194,7 @@
     <MESSAGE value="19/4/24" />
     <option name="LAST_COMMIT_MESSAGE" value="19/4/24" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/experss.py</url>
-          <line>279</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/urllib/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="810" selection-start-line="810" selection-end-line="810" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/603531505/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -229,15 +211,22 @@
     </entry>
     <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="324" selection-start-line="324" selection-end-line="324" />
+        <state relative-caret-position="427">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="814" selection-start-line="814" selection-end-line="814" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
+        <state relative-caret-position="242">
+          <caret line="341" column="57" lean-forward="true" selection-start-line="341" selection-start-column="57" selection-end-line="341" selection-end-column="57" />
         </state>
       </provider>
     </entry>

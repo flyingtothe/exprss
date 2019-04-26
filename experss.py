@@ -276,36 +276,73 @@
 # 		print(n)
 
 
-# 14、将一个正整数分解质因数。例如：输入90,打印出90=2*3*3*5
-def reduceNum(n):
-	for i in range(2, n+1):
-		j = n / i
-		if n % i == 0:
-			print(i)
-			n = j
-reduceNum(130)
+# 14、将一个正整数分解质因数
+# n = int(input('请输入一个整数：'))
+# print('%d=' % n, end='')
+# while n > 1:
+# 	for i in range(2, n+1):
+# 		if n % i == 0:
+# 			n = int(n/i)
+# 			if n == 1:
+# 				print('%d' % i, end='')
+# 			else:
+# 				print('%d*' % i, end='')
+# 			break
+# print()
+
+# from math import sqrt
+# while 1:
+# 	n = int(input('请输入整数：'))
+# 	print("%d = " % n, end='')
+# 	while 1:
+# 		for i in range(2, int(sqrt(n)+1)):
+# 			if n % i == 0:
+# 				print('%d*' % i, end='')
+# 				n = int(n/i)
+# 				break
+# 		else:
+# 			print(n)
+# 			break
+
+# def prime(n):
+# 	L = [ ]
+# 	while n > 1:
+# 		for i in range(2, n+1):
+# 			if n % i == 0:
+# 				n = int(n/i)
+# 				L.append(i)
+# 				break
+# 	return L
+# while 1:
+# 	s = input('请输入一个正整数：')
+# 	if s.isdigit() and int(s)>0:
+# 		print(s, '=', '*'.join([str(x) for x in prime(int(s))]))
+# 	else:
+# 		print('请输入一个正整数：')
 
 
+# 15、利用条件运算符的嵌套来完成此题
+# 学习成绩>=90分的同学用A表示，60-89分之间的用B表示，60分以下的用C表示
+# score = int(input('输入分数:\n'))
+# if score >= 90:
+# 	grade = 'A'
+# elif score >= 60:
+# 	grade = 'B'
+# else:
+# 	grade = 'C'
+# print('%d 属于 %s' % (score, grade))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 16、输出指定格式的日期
+# import datetime
+# if __name__ == '__main__':
+# 	print(datetime.date.today().strftime('%d/%m/%Y'))
+# 	BirthDate = datetime.date(1941, 1, 5)
+# 	print(BirthDate.strftime('%d/%m/%Y'))
+# 	BirthNextDay = BirthDate + datetime.timedelta(days=1)
+# 	print(BirthNextDay.strftime('%d/%m/%Y'))
+# 	FirstBirthday = BirthDate.replace(year=BirthDate.year + 1)
+# 	print(FirstBirthday.strftime('%d/%m/%Y'))
 
 
 
