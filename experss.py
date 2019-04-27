@@ -345,6 +345,93 @@
 # 	print(FirstBirthday.strftime('%d/%m/%Y'))
 
 
+# 17、输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数
+# s = input('请输入字符串：')
+# letters = 0
+# space = 0
+# digit = 0
+# others = 0
+# for c in s:
+# 	if c.isalpha():
+# 		letters += 1
+# 	elif c.isspace():
+# 		space += 1
+# 	elif c.isdigit():
+# 		digit += 1
+# 	else:
+# 		others += 1
+# print('char = %d,space = %d,digit = %d,others = %d' % (letters, space, digit, others))
+
+# s = input('请输入一个字符串:')
+# letters = 0
+# space = 0
+# digit = 0
+# others = 0
+# i = 0
+# while i < len(s):
+#     c = s[i]
+#     i += 1
+#     if c.isalpha():
+#         letters += 1
+#     elif c.isspace():
+#         space += 1
+#     elif c.isdigit():
+#         digit += 1
+#     else:
+#         others += 1
+# print('char = %d,space = %d,digit = %d,others = %d' % (letters, space, digit, others))
+
+
+# 18、求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字
+# a = input('输入数字')
+# count = int(input('几个数字相加'))
+# ret = []
+# for i in range(1, count+1):
+# 	ret.append(int(a*i))
+# 	print(ret[i-1])
+# print(sum(ret))
+
+# Tn = 0
+# Sn = []
+# n = int(input('n = '))
+# a = int(input('a = '))
+# for count in range(n):
+# 	Tn = Tn + a
+# 	a = a * 10
+# 	Sn.append(Tn)
+# 	print(Tn)
+# print("计算和为：", sum(Sn))
+
+
+# 19、一个数如果恰好等于它的因子之和，这个数就称为"完数"
+from sys import stdout
+# for j in range(2, 1001):
+# 	k = []
+# 	n = 0
+# 	s = j
+# 	for i in range(1, j):
+# 		if j % i == 0:
+# 			n += 1
+# 			s -= i
+# 			k.append(i)
+# 	if s == 0:
+# 		print(j)
+# 		for i in range(n):
+# 			print(str(k[i]), end=' ')
+# 		print()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
