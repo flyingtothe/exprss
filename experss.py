@@ -404,7 +404,6 @@
 
 
 # 19、一个数如果恰好等于它的因子之和，这个数就称为"完数"
-from sys import stdout
 # for j in range(2, 1001):
 # 	k = []
 # 	n = 0
@@ -421,16 +420,45 @@ from sys import stdout
 # 		print()
 
 
+# 20、一球从100米高度自由落下，每次落地后反跳回原高度的一半；
+# 再落下，求它在第10次落地时，共经过多少米？第10次反弹多高？
+# tour = []
+# height = []
+# hei = 100.0
+# tim = 10
+# for i in range(1, tim + 1):
+# 	if i == 1:
+# 		tour.append(hei)
+# 	else:
+# 		tour.append(2 * hei)
+# 	hei /= 2
+# 	height.append(hei)
+# print('总高度：tour = {0}'.format(sum(tour)))
+# print('第10次反弹高度：height = {0}'.format(height[-1]))
+
+# th = []
+# h = 100.0
+# for i in range(1, 11):
+# 	if i == 1 or i == 2:
+# 		th.append(h)
+# 	else:
+# 		h /= 2
+# 		th.append(h)
+# 	if i == 10:
+# 		print('第10次反弹高度:{0}'.format(h/4))
+# print('总高度:{0}'.format(sum(th)))
 
 
+# 21、猴子吃桃问题：猴子第一天摘下若干个桃子，当即吃了一半，还不瘾，又多吃了一个第二天早上又将剩下的桃子吃掉一半，
+# 又多吃了一个。以后每天早上都吃了前一天剩下的一半零一个。到第10天早上想再吃时，见只剩下一个桃子了。求第一天共摘了多少
+# x = 1
+# for i in range(1, 10):
+# 	x = (x+1) * 2
+# print(x)
 
 
-
-
-
-
-
-
+# 21、两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。已抽签决定比赛名单。
+# 有人向队员打听比赛的名单。a说他不和x比，c说他不和x,z比，请编程序找出三队赛手的名单
 
 
 
