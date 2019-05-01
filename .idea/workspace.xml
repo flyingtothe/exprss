@@ -16,17 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="461" lean-forward="true" selection-start-line="461" selection-end-line="461" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/603531505/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10736">
-              <caret line="488" column="4" selection-start-line="488" selection-start-column="4" selection-end-line="488" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="502" column="10" lean-forward="true" selection-start-line="502" selection-start-column="10" selection-end-line="502" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -51,10 +42,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="561" />
-    <option name="y" value="38" />
+    <option name="x" value="783" />
+    <option name="y" value="30" />
     <option name="width" value="1151" />
-    <option name="height" value="987" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -62,7 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,6 +64,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556370233506</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="19/4/28">
+      <created>1556459778777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556459778777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -180,7 +178,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="561" y="38" width="1151" height="987" extended-state="0" />
+    <frame x="783" y="30" width="1151" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28481582" />
@@ -188,8 +186,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.29308325" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3669402" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.2900585" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36491227" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32942554" />
@@ -209,7 +207,8 @@
     <MESSAGE value="19/4/23" />
     <MESSAGE value="19/4/24" />
     <MESSAGE value="19/4/27" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/4/27" />
+    <MESSAGE value="19/4/28" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/4/28" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -248,17 +247,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experss.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/603531505/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="461" lean-forward="true" selection-start-line="461" selection-end-line="461" />
+        <state relative-caret-position="277">
+          <caret line="466" column="21" lean-forward="true" selection-start-line="466" selection-start-column="21" selection-end-line="466" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/603531505/builtins.py">
+    <entry file="file://$PROJECT_DIR$/experss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10736">
-          <caret line="488" column="4" selection-start-line="488" selection-start-column="4" selection-end-line="488" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="502" column="10" lean-forward="true" selection-start-line="502" selection-start-column="10" selection-end-line="502" selection-end-column="10" />
         </state>
       </provider>
     </entry>

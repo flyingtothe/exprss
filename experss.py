@@ -457,8 +457,118 @@
 # print(x)
 
 
-# 21、两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。已抽签决定比赛名单。
+# 22、两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。已抽签决定比赛名单。
 # 有人向队员打听比赛的名单。a说他不和x比，c说他不和x,z比，请编程序找出三队赛手的名单
+# for i in range(ord('x'), ord('z') + 1):
+# 	for j in range(ord('x'), ord('z') + 1):
+# 		if i != j:
+# 			for k in range(ord('x'), ord('z') + 1):
+# 				if (i != k) and (j != k):
+# 					if (i != ord('x')) and (k != ord('x')) and (k != ord('z')):
+# 						print('order is a -- %s\t b -- %s\tc--%s' % (chr(i), chr(j), chr(k)))
+
+
+# 23、打印出菱形图案
+# for i in range(4):
+# 	print(' ' * (4-i) + '*' * (2*i+1))
+# for i in range(3):
+# 	print(' ' * (2+i) + '*' * (4-2*i+1))
+
+
+# 24、有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和
+# a = 2.0
+# b = 1.0
+# ls = []
+# ls.append(a / b)
+# for i in range(19):
+# 	b, a = a, a+b
+# 	ls.append(a / b)
+# print(sum(ls))
+
+# a = 2.0
+# b = 1.0
+# s = 0
+# for n in range(1, 21):
+# 	s += a / b
+# 	t = a
+# 	a = a + b
+# 	b = t
+# print(s)
+
+
+# 25、求1+2!+3!+...+20!的和
+# s = 0
+# t = 1
+# for n in range(1, 21):
+# 	t *= n
+# 	s += t
+# print('1! + 2! + 3! + ... + 20! = %d' % s)
+
+# s = 0
+# l = range(1, 21)
+# def op(x):
+# 	r = 1
+# 	for i in range(1, x + 1):
+# 		r *= i
+# 	return r
+# s = sum(map(op, l))
+# print('1! + 2! + 3! + ... + 20! = %d' % s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
