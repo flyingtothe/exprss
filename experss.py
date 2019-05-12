@@ -515,50 +515,288 @@
 # print('1! + 2! + 3! + ... + 20! = %d' % s)
 
 
+# 26、利用递归方法求5!
+# def a(x):
+# 	sum = 0
+# 	if x == 0:
+# 		sum = 1
+# 	else:
+# 		sum = x * a(x-1)
+# 	return sum
+# print(a(5))
 
 
+# 27、利用递归函数调用方式，将所输入的5个字符，以相反顺序打印出来
+# def output(s, l):
+# 	if l == 0:
+# 		return
+# 	print(s[l - 1])
+# 	output(s, l - 1)
+# s = input('Input a string:')
+# l = len(s)
+# output(s, l)
+
+# def a(s):
+# 	# l = list(s)
+# 	# l.reverse()
+#
+# 	# l = s[::-1]
+#
+# 	# x = list(s)
+# 	# l = "".join(x[::-1])
+# 	print(l)
+# a(input('输入'))
+
+# def func(s):
+#     l = list(s)
+#     result = ""
+#     while len(l) > 0:
+#         result += l.pop()
+#     return result
+# print(func(input()))
 
 
+# 28、有5个人坐在一起，问第五个人多少岁？他说比第4个人大2岁。问第4个人岁数，他说比第3个人大2岁。
+# 问第三个人，又说比第2人大两岁。问第2个人，说比第一个人大两岁。最后问第一个人，他说是10岁。
+# 请问第五个人多大
+# n = 10
+# for i in range(5):
+# 	print("第%s人,%s岁" % (i+1, n))
+# 	n += 2
+
+# def a(n):
+# 	if n == 1:
+# 		c = 10
+# 	else:
+# 		c = a(n - 1) + 2
+# 	return c
+# print(a(5))
 
 
+# 29、给一个不多于5位的正整数，要求：一、求它是几位数，二、逆序打印出各位数字
+# x = int(input("请输入一个数:\n"))
+# a = x / 10000
+# b = x % 10000 / 1000
+# c = x % 1000 / 100
+# d = x % 100 / 10
+# e = x % 10
+# if a != 0:
+# 	print("5 位数：", e, d, c, b, a)
+# elif b != 0:
+# 	print("4 位数：", e, d, c, b)
+# elif c != 0:
+# 	print("3 位数：", e, d, c)
+# elif d != 0:
+# 	print("2 位数：", e, d)
+# else:
+# 	print("1 位数：", e)
+
+# n = str(int(input('shuru')))
+# for i in range(len(n)):
+# 	print(n[-i-1])
+# print(i+1)
 
 
+# 30、一个5位数，判断它是不是回文数
+# a = str(int(input("数字：")))
+# flag = True
+# for i in range(int(len(a) / 2)):
+# 	if a[i] != a[-i-1]:
+# 		flag = False
+# if flag:
+# 	print("是回文")
+# else:
+# 	print("不是回文")
 
 
+# 31、请输入星期几的第一个字母来判断一下是星期几，如果第一个字母一样，则继续判断第二个字母
+# letter = input('输入:')
+# if letter == 'M':
+# 	print("Monday")
+# elif letter == 'T':
+# 	letter = input("输入:")
+# 	if letter == 'u':
+# 		print("Tuesday")
+# 	elif letter == 'h':
+# 		print("Thursday")
+# 	else:
+# 		print('input err')
+# elif letter == 'W':
+# 	print("Wednesday")
+# elif letter == 'F':
+# 	print("Friday")
+# elif letter == "S":
+# 	letter = input("输入:")
+# 	if letter == 'a':
+# 		print('Saturday')
+# 	elif letter == 'u':
+# 		print('Sunday')
+# 	else:
+# 		print('input err')
+# else:
+# 	print('input err')
 
 
+# 32、按相反的顺序输出列表的值
+# a = ['one', 'two', 'three']
+# for i in a[::-1]:
+# 	print(i)
+
+# a.reverse()
+# for i in a:
+# 	print(i)
+
+# 33、按逗号分隔列表
+# L = [1, 2, 3, 4, 5]
+# s1 = ','.join(str(n) for n in L)
+# print(s1)
 
 
+# 34、练习函数调用
+# def hello():
+# 	print('hello world')
+# def five_hello():
+# 	for i in range(5):
+# 		hello()
+# five_hello()
 
 
+# 35、文本颜色设置
+# \033[0m				关闭所有属性			\033[1m				设置高亮度
+# \033[4m				下划线					\033[5m				闪烁
+# \033[7m				反显					\033[8m				消隐
+# \033[30m-\33[37m	设置前景颜色			\033[40m-\33[47m	设置背景颜色
+# \033[nA				光标上移n行				\033[nB				光标下移n行
+# \033[nC				光标右移n行				\033[nD				光标左移n行
+# \033[y;xH			设置光标位置			\033[2J				清屏
+# \033[K				清除从光标到行尾的内容	\034[s				保存光标位置
+# \033[u				恢复光标位置			\033[?25l			隐藏光标
+# \033[?25h			显示光标
+# 背景色：40:黑 41:深红 42:绿 43:黄色 44:蓝色 45:紫色 46:深绿 47:白色
+# 前景色：30:黑 31:红 32:绿 33:黄 34:蓝色 35:紫色 36:深绿 37:白色
+# class bcolors:
+# 	HEADER = '\033[95m'
+# 	OKBLUE = '\033[94m'
+# 	OKGREEN = '\033[92m'
+# 	WARNING = '\033[93m'
+# 	FAIL = '\033[91m'
+# 	ENDC = '\033[0m'
+# 	BOLD = '\033[1m'
+# 	UNDERLINE = '\033[4m'
+# print(bcolors.WARNING + '警告的字体颜色' + bcolors.ENDC)
 
 
+# 36、求100之内的素数
+# for i in range(2, 101):
+# 	for j in range(2, i):
+# 		if i % j == 0:
+# 			break
+# 	else:
+# 		print(i)
+
+# 37、对10个数进行排序
+# ls = []
+# for i in range(10):
+# 	ls.append(int(input('数字')))
+# # ls.sort()
+# for i in range(9):
+# 	min = i
+# 	for j in range(i+1, 10):
+# 		if ls[min] > ls[j]: min = j
+# 	ls[i], ls[min] = ls[min], ls[i]
+# for i in range(10):
+# 	print(ls[i])
 
 
+# 38、求一个3*3矩阵主对角线元素之和
+# a = []
+# sum = 0.0
+# for i in range(3):
+# 	a.append([])
+# 	for j in range(3):
+# 		a[i].append(float(input("num")))
+# for i in range(3):
+# 	sum += a[i][i]
+# print(sum)
+
+# sum = 0.0
+# for i in range(3):
+# 	for j in range(3):
+# 		a = float(input("num"))
+# 		if i == j:
+# 			sum += a
+# print(sum)
 
 
+# 39、有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中
+# a = [1, 4, 6, 9, 13, 16, 19, 28, 40, 100, 0]
+# number = int(input("插入一个数字:"))
+# if number > a[9]:
+# 	a[10] = number
+# else:
+# 	for i in range(11):
+# 		if a[i] > number:
+# 			b = a[i]
+# 			a[i] = number
+# 			for j in range(i+1, 11):
+# 				c = a[j]
+# 				a[j] = b
+# 				b = c
+# 			break
+# for i in range(11):
+# 	print(a[i])
+
+# a = [1, 4, 6, 9, 13, 16, 19, 28, 40, 100]
+# a.append(int(input("number")))
+# a.sort()
+# print(a)
 
 
+# 40、将一个数组逆序输出
+# a = [9, 6, 5, 4, 1]
+# for i in a[::-1]:
+# 	print(i)
+
+# a = [9, 6, 5, 4, 1]
+# for i in range(len(a)):
+# 	print(a[-i-1])
+
+# a = [9, 6, 5, 4, 1]
+# for i in range(int(len(a) / 2)):
+# 	a[i], a[-i-1] = a[-i-1], a[i]
+# print(a)
 
 
+# 40、模仿静态变量的用法
+# def varfunc():
+# 	var = 0
+# 	print('var = %d' % var)
+# 	var += 1
+# if __name__ == '__main__':
+# 	for i in range(3):
+# 		varfunc()
+#
+# class Static:
+# 	StaticVar = 5
+# 	def varfunc(self):
+# 		self.StaticVar += 1
+# 		print(self.StaticVar)
+#
+# print(Static.StaticVar)
+# a = Static()
+# for i in range(3):
+# 	a.varfunc()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# class Static:
+# 	svar = 5
+# 	def varfunc(self):
+# 		self.svar += 1
+# 		print(self.svar)
+#
+# print(Static.svar)
+# a = Static()
+# for i in range(3):
+# 	a.varfunc()
 
 
 
