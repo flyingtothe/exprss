@@ -767,7 +767,7 @@
 # print(a)
 
 
-# 40、模仿静态变量的用法
+# 41、模仿静态变量的用法
 # def varfunc():
 # 	var = 0
 # 	print('var = %d' % var)
@@ -775,37 +775,106 @@
 # if __name__ == '__main__':
 # 	for i in range(3):
 # 		varfunc()
-#
 # class Static:
 # 	StaticVar = 5
 # 	def varfunc(self):
 # 		self.StaticVar += 1
 # 		print(self.StaticVar)
-#
 # print(Static.StaticVar)
 # a = Static()
 # for i in range(3):
 # 	a.varfunc()
 
-# class Static:
-# 	svar = 5
-# 	def varfunc(self):
-# 		self.svar += 1
-# 		print(self.svar)
-#
-# print(Static.svar)
-# a = Static()
+
+# 42、学习使用auto定义变量的用法.没有auto关键字，使用变量作用域举例
+# num = 2
+# def autofunc():
+# 	num = 1
+# 	print('internal block num = %d' % num)
+# 	num += 1
 # for i in range(3):
-# 	a.varfunc()
+# 	print("the num =%d" % num)
+# 	num += 1
+# 	autofunc()
 
 
+# 43、模仿静态变量(static)另一案例。python作用域使用方法
+# class Num:
+# 	nNum = 1
+# 	def inc(self):
+# 		self.nNum += 1
+# 		print('nNum = %d' % self.nNum)
+# if __name__ == '__main__':
+# 	nNum = 2
+# 	inst = Num()
+# 	for i in range(3):
+# 		nNum += 1
+# 		print('The num = %d' % nNum)
+# 		inst.inc()
 
 
+# 44、两个 3 行 3 列的矩阵，实现其对应位置的数据相加，并返回一个新矩阵
+# X = [[12, 7, 3], [4, 5, 6], [7, 8, 9]]
+# Y = [[5, 8, 1], [6, 7, 3], [4, 5, 9]]
+# r = []
+# for i in range(3):
+# 	r.append([])
+# 	for j in range(3):
+# 		r[i].append(X[i][j]+Y[i][j])
+# for i in r:
+# 	print(i)
+
+# X = [[12, 7, 3], [4, 5, 6], [7, 8, 9]]
+# Y = [[5, 8, 1], [6, 7, 3], [4, 5, 9]]
+# result = [[0, 0, 0],  [0, 0, 0],  [0, 0, 0]]
+# for i in range(len(X)):
+# 	for j in range(len(X[0])):
+# 		result[i][j] = X[i][j] + Y[i][j]
+# for r in result:
+# 	print(r)
 
 
+# 45、统计 1 到 100 之和
+# sum = 0
+# for i in range(1, 101):
+# 	sum += i
+# print(sum)
 
 
+# 46、求输入数字的平方，如果平方运算后小于 50 则退出
+# while True:
+# 	a = int(input('输入数字;'))
+# 	print(a * a)
+# 	if a*a < 50:
+# 		break
 
+# TRUE = 1
+# FALSE = 0
+# def SQ(x):
+# 	return x * x
+# print('如果输入的数字小于 50，程序将停止运行。')
+# again = 1
+# while again:
+# 	num = int(input('请输入一个数字：'))
+# 	print('运算结果为: %d' % (SQ(num)))
+# 	if SQ(num) >= 50:
+# 		again = TRUE
+# 	else:
+# 		again = FALSE
+
+
+# 47、两个变量值互换
+# def change(a, b):
+# 	a, b = b, a
+# 	return a, b
+# if __name__ == '__main__':
+# 	a = 10
+# 	b = 20
+# 	print(a, b)
+# 	print(change(a, b))
+
+
+# 48、数字比较
 
 
 
