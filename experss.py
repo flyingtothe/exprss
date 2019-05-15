@@ -875,6 +875,304 @@
 
 
 # 48、数字比较
+# a = 10
+# b = 20
+# if a > b:
+# 	print('%d 大于 %d' % (a, b))
+# elif a < b:
+# 	print('%d 大于 %d' % (b, a))
+# else:
+# 	print('相等')
+
+
+# 49、使用lambda来创建匿名函数
+# 变量名称不区分大小写
+# MAXIMUM = lambda x, y: (x > y) * x + (x < y) * y
+# MINIMUM = lambda x, y: (x > y) * y + (x < y) * x
+# a = 10
+# b = 20
+# print(MAXIMUM(a, b))
+# print(MINIMUM(a, b))
+
+
+# 50、输出一个随机数
+# import random
+# print(random.uniform(10, 20))
+# print(random.random())
+
+
+# 51、学习使用按位与
+# a = 077
+# b = a & 3
+# print('a & 3 = %d' % b)
+# b &= 7
+# print('a & b = %d' % b)
+
+
+# 52、学习使用按位或
+# a = 077
+# b = a | 3
+# print('a | 3 = %d' % b)
+# b |= 7
+# print('a | b = %d' % b)
+
+
+# 53、学习使用按位异或
+# a = 077
+# b = a ^ 3
+# print('a ^ 3 = %d' % b)
+# b ^= 7
+# print('a ^ b = %d' % b)
+
+
+# 54、取一个整数a从右端开始的4〜7位
+# a = int(input('input a number:\n'))
+# b = a >> 4
+# c = ~(~0 << 4)
+# d = b & c
+# print('%o\t%o' % (a, d))
+
+
+# 55、学习使用按位取反~
+# a = 234
+# b = ~a
+# print(b)
+# a = ~a
+# print(a)
+
+
+# 56、画图，学用circle画圆形
+# from tkinter import *
+# cancas = Canvas(width=600, height=600, bg="yellow")
+# cancas.pack(expand=YES, fill=BOTH)
+# k = 1
+# j = 1
+# for i in range(0, 26):
+# 	cancas.create_oval(310 - k, 250 - k, 310 + k, 250 + k, width=1)
+# 	k += j
+# 	j += 0.3
+# mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

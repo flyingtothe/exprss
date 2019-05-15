@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70c5306-2e58-4e57-a9cd-a17203dc733c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experss.py" beforeDir="false" afterPath="$PROJECT_DIR$/experss.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="877" lean-forward="true" selection-start-line="877" selection-end-line="877" />
+            <state relative-caret-position="492">
+              <caret line="955" lean-forward="true" selection-start-line="955" selection-end-line="955" />
             </state>
           </provider>
         </entry>
@@ -40,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="776" />
     <option name="y" value="30" />
     <option name="width" value="1151" />
@@ -52,7 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -64,6 +64,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,10 +262,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Program Files/Anaconda3/envs/django_env/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="368" lean-forward="true" selection-start-line="368" selection-end-line="368" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="877" lean-forward="true" selection-start-line="877" selection-end-line="877" />
+        <state relative-caret-position="492">
+          <caret line="955" lean-forward="true" selection-start-line="955" selection-end-line="955" />
         </state>
       </provider>
     </entry>
