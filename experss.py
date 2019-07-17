@@ -954,63 +954,250 @@
 # mainloop()
 
 
+# 57、画图，学用line画直线
+# from tkinter import *
+# canvas = Canvas(width=300, height=300, bg="green")
+# canvas.pack(expand=YES, fill=BOTH)
+# x0 = 263
+# y0 = 263
+# x1 = 275
+# y1 = 275
+# for i in range(19):
+# 	canvas.create_line(x0, y0, x0, y1, width=1, fill='red')
+# 	x0 = x0 - 5
+# 	y0 = y0 - 5
+# 	x1 = x1 + 5
+# 	y1 = y1 + 5
+# x0 = 263
+# y1 = 275
+# y0 = 263
+# for i in range(21):
+# 	canvas.create_line(x0, y0, x0, y1, fill='blue')
+# 	x0 += 5
+# 	y0 += 5
+# 	y1 += 5
+# mainloop()
 
 
+# 58、画图，学用rectangle画方形
+# from tkinter import *
+# root = Tk()
+# root.title('Canvas')
+# canvas = Canvas(root, width=400, height=400, bg='yellow')
+# x0 = 263
+# y0 = 263
+# x1 = 275
+# y1 = 275
+# for i in range(19):
+# 	canvas.create_rectangle(x0, y0, x1, y1)
+# 	x0 -= 5
+# 	y0 -= 5
+# 	x1 += 5
+# 	y1 += 5
+# canvas.pack()
+# root.mainloop()
 
 
+# 59、画图，综合例子
+# from tkinter import *
+# canvas = Canvas(width=300, height=300, bg='green')
+# canvas.pack(expand=YES, fill=BOTH)
+# x0 = 150
+# y0 = 100
+# canvas.create_oval(x0-10, y0-10, x0+10, y0+10)
+# canvas.create_oval(x0-20, y0-20, x0+20, y0+20)
+# canvas.create_oval(x0-50, y0-50, x0+50, y0+50)
+# import math
+# B = 0.809
+# for i in range(16):
+# 	a = 2 * math.pi / 16 * i
+# 	x = math.ceil(x0 + 48 * math.cos(a))
+# 	y = math.ceil(y0 + 48 * math.sin(a) * B)
+# canvas.create_oval(x0-60, y0-60, x0+60, y0+60)
+# for k in range(501):
+# 	for i in range(17):
+# 		a = (2 * math.pi / 16) * i + (2 * math.pi / 180) * k
+# 		x = math.ceil(x0 + 48 * math.cos(a))
+# 		y = math.ceil(y0 + 48 + math.sin(a) * B)
+# 		canvas.create_line(x0, y0, x, y, fill='red')
+# 	for j in range(51):
+# 		a = (2 * math.pi / 16) * i + (2 * math.pi / 180) * k - 1
+# 		x = math.ceil(x0 + 48 * math.cos(a))
+# 		y = math.ceil(y0 + 48 * math.sin(a) * B)
+# 		canvas.create_line(x0, y0, x, y, fill='red')
+# mainloop()
 
 
+# 60、计算字符串长度
+# s = '13sadf3fa6we4f6as54f13'
+# print(len(s))
 
 
+# 61、打印出杨辉三角形(打印出10行)
+# a = []
+# for i in range(10):
+# 	a.append([])
+# 	for j in range(i+1):
+# 		a[i].append(0)
+# 	a[i][0], a[i][i] = 1, 1
+# for i in range(2, 10):
+# 	for j in range(1, i):
+# 		a[i][j] = a[i-1][j-1] + a[i-1][j]
+# for i in range(10):
+# 	print(a[i])
+
+# 传统的杨辉三角形实现
+# def pascal(row):
+# 	result_list = [0] * (row * 2 + 1)
+# 	for row_loc in range(row):
+# 		base_loc = row - row_loc - 1
+# 		if row_loc == 0:
+# 			result_list[base_loc] = 1
+# 		else:
+# 			result_list[base_loc] = result_list[base_loc + 1]
+# 			for line_loc in range(row_loc):
+# 				now_loc = base_loc + (line_loc + 1) * 2
+# 				result_list[now_loc] = result_list[now_loc - 1] + result_list[now_loc + 1]
+# 				result_list[now_loc - 1] = 0
+# 		print(str(result_list))
+# pascal(10)
+
+# 利用python列表迭代的实现
+# def printLine(lineList, row):
+# 	lineList = [str(tmpNum) for tmpNum in lineList]
+# 	print("%s%s" % (" " * (row - len(lineList)), " ".join(lineList)))
+# def pascal(row):
+# 	for i in range(row):
+# 		if i < 2:
+# 			yhList = [1] * (i + 1)
+# 		else:
+# 			yhList[1:-1] = [(tmpNum + yhList[j])  for j, tmpNum in enumerate(yhList[1:])]
+# 		printLine(yhList, row)
+# pascal(10)
 
 
+# 62、查找字符串
+# str1 = 'f3as1df32a4f654a1fdaseesfasdfaewafsdfa'
+# str2 = 'as'
+# print(str1.find(str2))
 
 
+# 63、画椭圆
+# from tkinter import *
+# x = 360
+# y = 160
+# top = y - 30
+# bottom = y - 30
+# canvas = Canvas(width=400, height=600, bg='white')
+# for i in range(20):
+# 	canvas.create_oval(250-top, 250-bottom, 250+top, 250+bottom)
+# 	top -= 5
+# 	bottom += 5
+# canvas.pack()t
+# mainloop()
 
 
+# 64、利用ellipse 和 rectangle 画图
+# from tkinter import *
+# canvas = Canvas(width=400, height=600, bg='white')
+# left = 20
+# right = 50
+# top = 50
+# num = 15
+# for i in range(num):
+# 	canvas.create_oval(250 - right, 250 - left, 250 + right, 250 + left)
+# 	canvas.create_oval(250 - 20, 250 - top, 250 + 20, 250 + top)
+# 	canvas.create_rectangle(20 - 2 * i, 20 - 2 * i, 10 * (i + 2), 10 * (i + 2))
+# 	right += 5
+# 	left += 5
+# 	top += 10
+# canvas.pack()
+# mainloop()
 
 
+# 65、一个最优美的图案
+# import math
+# class PTS:
+# 	def __init__(self):
+# 		self.x = 0
+# 		self.y = 0
+# points = []
+# from tkinter import *
+# def LineToDemo():
+# 	screenx = 400
+# 	screeny = 400
+# 	canvas = Canvas(width=screenx, height=screeny, bg='white')
+# 	AspectRatio = 0.85
+# 	MAXPTS = 15
+# 	h = screeny
+# 	w = screenx
+# 	xcenter = w / 2
+# 	ycenter = h / 2
+# 	radius = (h - 30) / (AspectRatio * 2) - 20
+# 	step = 360 / MAXPTS
+# 	angle = 0.0
+# 	for i in range(MAXPTS):
+# 		rads = angle * math.pi / 180.0
+# 		p = PTS()
+# 		p.x = xcenter + int(math.cos(rads) * radius)
+# 		p.y = ycenter - int(math.sin(rads) * radius * AspectRatio)
+# 		angle += step
+# 		points.append(p)
+# 	canvas.create_oval(xcenter - radius, ycenter - radius, xcenter + radius, ycenter + radius)
+# 	for i in range(MAXPTS):
+# 		for j in range(i, MAXPTS):
+# 			canvas.create_line(points[i].x, points[i].y, points[j].x, points[j].y)
+#
+# 	canvas.pack()
+# 	mainloop()
+# LineToDemo()
 
 
+# 66、输入3个数a,b,c，按大小顺序输出
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# def swap(p1, p2):
+# 	return p2, p1
+# if a > b: a, b = swap(a, b)
+# if a > c: a, c = swap(a, c)
+# if b > c: b, c = swap(b, c)
+# print(a, b, c)
+
+# ls = []
+# for i in range(3):
+# 	ls.append(int(input()))
+# ls.sort()
+# for i in ls:
+# 	print(i)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 67、输入数组，最大的与第一个元素交换，最小的与最后一个元素交换，输出数组
+# def inp(num):
+# 	for i in range(6):
+# 		num.append(int(input('数字：')))
+# def max_num(arr):
+# 	max = 0
+# 	for i in range(1, len(arr)-1):
+# 		p = i
+# 		if arr[p] > arr[max]: max = p
+# 	k = max
+# 	arr[0], arr[k] = arr[k], arr[0]
+# def min_num(arr):
+# 	min = 0
+# 	for i in range(arr):
+# 		p = i
+# 		if arr[p] < arr[min]: min = p
+# 	l = min
+# 	arr[5], arr[l] = arr[l], arr[5]
+# def outp(num):
+# 	for i in range(len(num)):
+# 		print(num[i])
+# array = []
+# inp(array)  # 输入 6 个数字并放入数组
+# max_num(array)  # 获取最大元素并与第一个元素交换
+# min_num(array)  # 获取最小元素并与最后一个元素交换
+# print('计算结果：' + outp(array))
 
 
 
